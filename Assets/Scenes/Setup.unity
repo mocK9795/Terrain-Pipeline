@@ -563,6 +563,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2101801251}
   - component: {fileID: 2101801250}
+  - component: {fileID: 2101801255}
+  - component: {fileID: 2101801254}
+  - component: {fileID: 2101801253}
   - component: {fileID: 2101801252}
   m_Layer: 0
   m_Name: Pipeline
@@ -585,6 +588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data: {fileID: 15600000, guid: f51ca2bde51000747b96705b1bc97560, type: 2}
   pipeline:
+  - {fileID: 2101801255}
+  - {fileID: 2101801253}
   - {fileID: 2101801252}
   mapSize: {x: 513, y: 600, z: 513}
 --- !u!4 &2101801251
@@ -596,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 2101801249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 125.42056, y: -454.93628, z: 183.73477}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -611,11 +616,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 2101801249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7604b25a39f6db54abed7be173f12f59, type: 3}
+  m_Script: {fileID: 11500000, guid: ffc37cc8def63c34fa374405715db9f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dataCashed: 0
-  scale: 0.011
+  scale: 0.2
+--- !u!114 &2101801253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101801249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5ec34394fb2244ca44896a51e15033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataCashed: 0
+--- !u!114 &2101801254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101801249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb94422c83adcc44c9624e5779a8a4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataCashed: 0
+  _texture: {fileID: 2800000, guid: 64dab7ce08f59354bb3d8655cd59aa9d, type: 3}
+--- !u!114 &2101801255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101801249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274a844a3839d5a45837f405a16e2828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataCashed: 0
+  _multiplyTexture: {fileID: 2101801254}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
