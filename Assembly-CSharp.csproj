@@ -61,6 +61,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\TPipeline\TP Components\Basic\FlatTexture.cs" />
+    <Compile Include="Assets\TPipeline\TP Components\Operations\AddTexture.cs" />
+    <Compile Include="Assets\TPipeline\TP Components\Basic\InvertTexture.cs" />
+    <Compile Include="Assets\TPipeline\TP Components\Pipeline\PipelineStack.cs" />
     <Compile Include="Assets\TPipeline\TP Components\Operations\ScaleTexture.cs" />
     <Compile Include="Assets\TPipeline\TerrainPipeline.cs" />
     <Compile Include="Assets\TPipeline\TP Components\Basic\SetTexture.cs" />
@@ -68,6 +72,7 @@
     <Compile Include="Assets\TPipeline\TP Components\Basic\RandomTexture.cs" />
     <Compile Include="Assets\TPipeline\TerrainPipelineComponent.cs" />
     <Compile Include="Assets\TPipeline\TP Components\Operations\MultiplyTexture.cs" />
+    <Compile Include="Assets\TPipeline\TP Components\Basic\GaussianBlurTexture.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1086,8 +1091,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
@@ -1102,8 +1107,8 @@
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.TerrainTools">
-      <HintPath>Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
